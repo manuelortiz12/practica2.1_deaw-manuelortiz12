@@ -247,6 +247,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuracion-del-servidor-web-nginx" class="md-nav__link">
+    CONFIGURACION DEL SERVIDOR WEB NGINX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-servidor-sftp-en-debian" class="md-nav__link">
+    CONFIGURAR SERVIDOR SFTP EN DEBIAN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-archivos-mediante-filezilla" class="md-nav__link">
+    AÑADIR ARCHIVOS MEDIANTE FILEZILLA
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -295,6 +316,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuracion-del-servidor-web-nginx" class="md-nav__link">
+    CONFIGURACION DEL SERVIDOR WEB NGINX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-servidor-sftp-en-debian" class="md-nav__link">
+    CONFIGURAR SERVIDOR SFTP EN DEBIAN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-archivos-mediante-filezilla" class="md-nav__link">
+    AÑADIR ARCHIVOS MEDIANTE FILEZILLA
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -321,6 +363,29 @@ Además clonamos el siguiente repositorio en este:</p>
 <p><img alt="3" src="capturas/3.png" /></p>
 <p>Ahora entramos al navegador con nuestra ip y nos sale lo siguiente:</p>
 <p><img alt="4" src="capturas/4.png" /></p>
+<h2 id="configuracion-del-servidor-web-nginx">CONFIGURACION DEL SERVIDOR WEB NGINX</h2>
+<p>Debemos modificar el siguiente archivo:</p>
+<pre><code>/etc/nginx/sites-available/vuestro_dominio
+</code></pre>
+<p><img alt="5" src="capturas/5.png" />
+<img alt="6" src="capturas/6.png" /></p>
+<p>Primero antes de nada modificaremos el archivo /etc/hosts para que nuestra máquina anfitriona asocie la IP de la máquina virtual con el nombre del servidor</p>
+<p><img alt="alt" src="capturas/7.png" /></p>
+<p>Y comprobaremos los logs.</p>
+<h2 id="configurar-servidor-sftp-en-debian">CONFIGURAR SERVIDOR SFTP EN DEBIAN</h2>
+<p>Primero instalamos vsftpd y creamos una carpeta /ftp en el home de la máquina virtual.</p>
+<p>Después creamos los certificados de seguridad necesarios para aportar la capa de cifrado a nuestra conexión.</p>
+<p><img alt="8" src="capturas/8.png" /></p>
+<p>A continuación realizaremos la configuración de vsftpd</p>
+<p>Abrimos el siguiente archivo de configuracion:</p>
+<p><img alt="9" src="capturas/9.png" /></p>
+<p>Y añadimos lo siguiente:</p>
+<p><img alt="10" src="capturas/10.png" /></p>
+<p>Y reiniciamos.</p>
+<h2 id="anadir-archivos-mediante-filezilla">AÑADIR ARCHIVOS MEDIANTE FILEZILLA</h2>
+<p>Descargamos filezilla en nuestro pc y le ponemos las siguientes especificaciones:</p>
+<p><img alt="11" src="capturas/11.png" /></p>
+<p>Conectamos y ya podremos transferir archivos con la máquina virtual.</p>
 
 
 
