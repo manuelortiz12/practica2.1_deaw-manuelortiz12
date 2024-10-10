@@ -1,17 +1,19 @@
-# Welcome to MkDocs
+# PRACTICA 2.1: Instalación y configuración de un servidor web Nginx
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## INSTALACION NGINX
+![1](capturas/1.png)
 
-## Commands
+Comprobamos que esté funcionando:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+![2](capturas/2.png)
 
-## Project layout
+## CREACION DEL DIRECTORIO DEL SITIO WEB
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Creamos el directorio y haremos que el propietario de esta carpeta y todo lo que haya dentro sea el usuario www-data, además de proporcionarle los permisos pertinentes.
+Además clonamos el siguiente repositorio en este:
+
+![3](capturas/3.png)
+
+Ahora entramos al navegador con nuestra ip y nos sale lo siguiente:
+
+![4](capturas/4.png)
